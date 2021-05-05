@@ -2,7 +2,9 @@
 =============================================================================
 
 The protocol described is the so-called "archi standard" localizer
-event sequence.  See Pinel et al., BMC neuroscience 2007 for reference.
+event sequence [:footcite:`pinel2007fast`].
+
+.. footbibliography::
 """
 
 print(__doc__)
@@ -63,3 +65,4 @@ events = pd.DataFrame({'trial_type': trial_type,
 tsvfile = 'localizer_events.tsv'
 events.to_csv(tsvfile, sep='\t', index=False)
 print("Created the events file in %s " % tsvfile)
+
